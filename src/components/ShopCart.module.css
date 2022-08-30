@@ -1,0 +1,179 @@
+.shopCartContainer {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    109.6deg,
+    rgb(255, 207, 84) 11.2%,
+    rgb(255, 158, 27) 91.1%
+  );
+  overflow: hidden;
+}
+
+.emptyShopCart {
+  text-align: center;
+  border: 1px solid black;
+  width: fit-content;
+  height: 270px;
+  margin: 100px auto;
+  padding: 100px;
+  border-radius: 20px;
+  animation: empty 1500ms linear;
+}
+
+.emptyShopCart h1 {
+  margin-bottom: 70px;
+}
+
+@keyframes empty {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.shopCartContents {
+  display: flex;
+  /* align-items: center; */
+  gap: 100px;
+}
+
+.checkOutClearContainer {
+  margin-top: 25px;
+  width: 25%;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.checkOutClearContainer > h2:first-child {
+  margin-bottom: 20px;
+}
+
+.checkOutClearcontainerButtons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkOutClearcontainerButtons span:last-child,
+.checkOutClearcontainerButtons span:first-child {
+  background: linear-gradient(to right, #434343 0%, black 100%);
+  color: #eee;
+  width: fit-content;
+  padding: 4px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+
+.checkOutClearcontainerButtons span:last-child:hover,
+.checkOutClearcontainerButtons span:first-child:hover {
+  color: gray;
+}
+
+.detailsDescriptions span {
+  background: linear-gradient(to right, #434343 0%, black 100%);
+  color: #eee;
+  width: fit-content;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.checkOut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  height: 130px;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  margin: auto;
+  gap: 30px;
+  animation: checkout 1000ms linear;
+}
+
+.checkOut > div:first-child {
+  display: flex;
+  gap: 20px;
+}
+
+.backToShop {
+  background: linear-gradient(to right, #434343 0%, black 100%);
+  color: #eee;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 300ms linear;
+}
+
+.backToShop:hover {
+  color: gray;
+}
+
+@keyframes checkout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1460px) {
+  .checkOut {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .checkOutClearContainer {
+    width: 750px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+  .shopCartContents {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 770px) {
+  .cartsContainer {
+    width: 100%;
+  }
+
+  .checkOutClearContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .emptyShopCart {
+    width: 97%;
+    padding: 50px;
+    border: none;
+    margin: 0;
+  }
+
+  .emptylineSeperator {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media (max-width: 625px) {
+  .checkOut {
+    width: 100%;
+    height: 150px;
+  }
+}

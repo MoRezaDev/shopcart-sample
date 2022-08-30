@@ -1,0 +1,84 @@
+.cartContainer {
+  /* margin: 20px; */
+  width: 750px;
+  height: 150px;
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cartContainer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.decreaseButton {
+  background: linear-gradient(
+    109.6deg,
+    rgb(255, 207, 84) 11.2%,
+    rgb(255, 158, 27) 91.1%
+  );
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  font-size: 25px;
+  line-height: 12px;
+  border-radius: 50%;
+  color: #eee;
+  cursor: pointer;
+  border: none;
+  line-height: 0;
+}
+
+.quantityContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.quantityContainer > div:first-child,
+.quantityContainer > div:last-child {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(255, 207, 84) 11.2%,
+    rgb(255, 158, 27) 91.1%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.quantityContainer > div:first-child span,
+.quantityContainer > div:last-child span {
+  color: #eee;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quantityContainer > div:first-child span {
+  position: relative;
+  top: -2px;
+}
+
+.quantityContainer > div:last-child span {
+  position: relative;
+  top: -2px;
+}
+
+.spanQuantity {
+  font-weight: bold;
+}
+
+@media (max-width: 770px) {
+  .cartContainer {
+    width: 100%;
+  }
+}

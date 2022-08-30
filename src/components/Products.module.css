@@ -1,0 +1,19 @@
+.productsContainer {
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(
+    109.6deg,
+    rgb(255, 207, 84) 11.2%,
+    rgb(255, 158, 27) 91.1%
+  );
+  padding-bottom: 30px;
+}
+
+.productsMain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+}
