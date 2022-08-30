@@ -34,4 +34,8 @@
   .footerContentItems:nth-child(2) {
     display: none;
   }
+
+  .footerContainer {
+    height: 220px;
+  }
 }

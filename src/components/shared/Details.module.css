@@ -120,7 +120,7 @@
 
 @media (max-width: 490px) {
   .detailsContainer {
-    height: auto;
+    height: 100%;
   }
   .detailsContent {
     padding: 0;
