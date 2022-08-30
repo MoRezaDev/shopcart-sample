@@ -119,6 +119,9 @@
 }
 
 @media (max-width: 490px) {
+  .detailsContainer {
+    height: auto;
+  }
   .detailsContent {
     padding: 0;
     border: none;
